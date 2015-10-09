@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://ct.ndp.rec.inetpsa.com/" />
+<title>PT 21</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">PT 21</td></tr>
+</thead><tbody>
+<!--Tranche 1 : PT 21-->
+<!--- Logo Peugeot-->
+<tr>
+	<td>storeElementPositionLeft</td>
+	<td>id=logo</td>
+	<td>logotPositionLeft</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${logotPositionLeft}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPositionLeft</td>
+	<td>id=logo</td>
+	<td>35</td>
+</tr>
+<tr>
+	<td>storeElementHeight</td>
+	<td>id=logo</td>
+	<td>logoHeight</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${logoHeight}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementHeight</td>
+	<td>id=logo</td>
+	<td>99</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=PEUGEOT</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Accueil SITE FR RECETTE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/fr/web-analyse-seo-masterpage.html</td>
+	<td></td>
+</tr>
+<!--Rubrique Niveau 1-->
+<tr>
+	<td>verifyText</td>
+	<td>//ul[@id='menu']/li/a/span</td>
+	<td>Concessionnaires</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//ul[@id='menu']/li[2]/a/span</td>
+	<td>SERVICES ET ACCESSOIRES</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//ul[@id='menu']/li[3]/a/span</td>
+	<td>Mélanie P</td>
+</tr>
+<!--Rubrique Niveau 2 (il ne faut pas quelle change ! => Partie Fixe)-->
+<tr>
+	<td>click</td>
+	<td>//ul[@id='menu']/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Mélanie P - Test 1</td>
+	<td>Mélanie P - Test 1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Mélanie P - Test 7A</td>
+	<td>Mélanie P - Test 7A</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=En savoir plus</td>
+	<td>En savoir plus</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='menu']/li[3]/div/div/button</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
